@@ -1,0 +1,42 @@
+/* Ensure the header is fixed at the top of the viewport */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 1rem; /* Space around the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
+    z-index: 1000; /* Ensure the header stays above other content */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: aqua;
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .header nav a:hover {
+    color: #dc3545; /* Highlight color on hover */
+  }
+  
+  /* Add padding to the top of the page content to account for the fixed header */
+  body {
+    padding-top: 80px; /* Adjust based on the height of your header */
+  }
+  

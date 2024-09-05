@@ -1,0 +1,107 @@
+.home-page {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .home-header h1 {
+    font-size: 3rem;
+    color: #dc3545;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-header p {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  .home-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .feature-card h2 {
+    font-size: 1.8rem;
+    color: #dc3545;
+    margin-top: 1rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .feature-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+  
+  .home-promotion {
+    display: flex;
+    align-items: center;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .promotion-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 2rem;
+  }
+  
+  .promotion-text {
+    flex: 1;
+  }
+  
+  .promotion-text h2 {
+    font-size: 2rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+  }
+  
+  .promotion-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c82333;
+  }
+  
