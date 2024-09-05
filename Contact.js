@@ -1,36 +1,45 @@
 import React from 'react';
-import './Contact.css';
+
+const sectionStyle = {
+  padding: '50px 0',
+  textAlign: 'center',
+};
+
+const formStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '10px',
+  maxWidth: '400px',
+  margin: '0 auto',
+};
+
+const inputStyle = {
+  padding: '10px',
+  borderRadius: '5px',
+  border: '1px solid #ddd',
+};
+
+const buttonStyle = {
+  padding: '10px',
+  borderRadius: '5px',
+  backgroundColor: '#4caf50',
+  color: '#fff',
+  border: 'none',
+  cursor: 'pointer',
+};
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-container container mt-5">
-      <h1>Contact Us</h1>
-      <p>Feel free to reach out to us using the contact information below.</p>
-      
-      <div className="row">
-        <div className="col-md-6">
-          <h3>Address</h3>
-          <p>
-            Shop no 3 & 4 Ground Floor, MSG complex (“Commercial Complex”),<br />
-            (Opp to Mayil Mark bakery), College Road, Chathram Bus Stand,<br />
-            Trichy – 620002.
-          </p>
-        </div>
-        <div className="col-md-6">
-          <h3>Phone</h3>
-          <p>+91  7305085121</p>
-        </div>
-      </div>
-      
-      <div className="row">
-        <div className="col-md-6">
-          <h3>Email</h3>
-          <p>redmi@gmail.com</p>
-        </div>
-        <div className="col-md-6">
-          <h3>Website</h3>
-          <p>www.redmi.com</p>
-        </div>
+    <section id="contact" style={sectionStyle}>
+      <div>
+      <br></br>
+        <h2>Contact Me</h2>
+        <form id="contact-form" style={formStyle}>
+          <input type="text" id="name" name="name" placeholder="Name" required style={inputStyle} />
+          <input type="email" id="email" name="email" placeholder="Email" required style={inputStyle} />
+          <textarea id="message" name="message" placeholder="Message" required style={inputStyle}></textarea>
+          <button type="submit" style={buttonStyle}>Send</button>
+        </form>
       </div>
     </section>
   );
